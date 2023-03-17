@@ -50,3 +50,18 @@ print(mydict.items())
 print(mydict.keys())
 print(mydict.values())
 print(newDict)
+
+# operators and buit in functions
+
+engtosp = {"one": "uno","two":"dos","three":"tres","four":"cuarto"}
+print('two' in engtosp) # only accesses key values
+print('cuarto' in engtosp.values()) # now it will return true bcoz it will acces values (TC - O(1))
+
+##-lists takes longer time in the in operator-##
+
+for key in engtosp:
+    print(key,engtosp[key])
+# TC-O(n) for the avobe code
+
+print(any(engtosp))
+print(sorted(engtosp,key=len))
