@@ -61,7 +61,7 @@ print('cuarto' in engtosp.values()) # now it will return true bcoz it will acces
 
 for key in engtosp:
     print(key,engtosp[key])
-# TC-O(n) for the avobe code
+# TC-O(n) for the avobe code 
 
 print(any(engtosp))
 print(sorted(engtosp,key=len))

@@ -22,7 +22,7 @@ print (a['a','b'])
 # B. [1,2]
 # C. {‘a’:1,’b’:2}
 # D. (1,2)
-
+# keyerror ayega kyuki hum isme ek baar me ek hi element ko access kr sakte hai
  
 
 # Q-3. What will be the output of the following code block?
@@ -38,6 +38,7 @@ def addone(index):
 addone('Apple')
 addone('Banana')
 addone('apple')
+addone('')
 print (len(fruit))
 # A. 1 
 # B. 2
@@ -150,7 +151,7 @@ print(id(r) == id(rec))
 # C. 0
 # D. 1
 
- 
+#  copy karne se id change ho jata hai isiliye output false atat hai 
 
 # Q-10. What will be the output of the following code snippet?
 
@@ -164,3 +165,4 @@ print(id1 == id2)
 # B. False
 # C. 1
 # D. Exception
+# iska output true bhi ho sakta hai or false bhi depending on ki dict same memory location in my hash table use karega ya nahi 
