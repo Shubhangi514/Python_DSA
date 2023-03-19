@@ -113,7 +113,7 @@ class SLinkedlist:
 
     def deleteEntireSLL(self):
         if self.head is None:
-            print('SLL alrady DNE')
+            print('SLL already DNE')
         else:
             self.head = None
             self.tail = None
