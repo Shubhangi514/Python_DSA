@@ -1,5 +1,3 @@
-#   Created by Elshad Karimov on 01/05/2020.
-#   Copyright © 2020 AppMillers. All rights reserved.
 
 class Node:
     def __init__(self, value=None):
@@ -40,7 +38,7 @@ class CircularSinglyLinkedList:
             if location == 0:
                 newNode.next = self.head
                 self.head = newNode
-                self.tail.next = newNode #here e are assigning the next refrence of last node to first node thats why uts called circular
+                self.tail.next = newNode # here we are assigning the next refrence of last node to first node thats why uts called circular
             elif location == 1:
                 newNode.next = self.tail.next
                 self.tail.next = newNode
@@ -48,7 +46,7 @@ class CircularSinglyLinkedList:
             else:
                 tempNode = self.head
                 index = 0
-                while index < location - 1: # yaha par because of head hum location ko  -1 krte hai then jB new node addhota hai to index +1 ho jaega as per code
+                while index < location - 1: # here because of head hum location ko  -1 krte hai then jB new node addhota hai to index +1 ho jaega as per code
                     tempNode = tempNode.next
                     index += 1
                 nextNode = tempNode.next
@@ -57,6 +55,7 @@ class CircularSinglyLinkedList:
             return "The node has been successfully inserted"
     
     # Traversal of a node in circular singly linked list
+    # TC -O(n) & SC - O(1)
     def traversalCSLL(self):
         if self.head is None:
             print("There is not any element for traversal")
@@ -67,7 +66,8 @@ class CircularSinglyLinkedList:
                 tempNode = tempNode.next
                 if tempNode == self.tail.next:
                     break
-    
+    # TC -O(n) & SC - O(1)
+
     # Searching for a node in circular singly linked list
     def searchCSLL(self, nodeValue):
         if self.head is None:
@@ -80,6 +80,7 @@ class CircularSinglyLinkedList:
                 tempNode = tempNode.next
                 if tempNode == self.tail.next:
                     return "The node does not exist in this CSLL"
+    # TC -O(n) & SC - O(1)
 
     # Delete  a node from circular singly linked list
     def deleteNode(self, location):
@@ -115,13 +116,14 @@ class CircularSinglyLinkedList:
                     index += 1
                 nextNode = tempNode.next
                 tempNode.next = nextNode.next
+    # TC -O(n) & SC - O(1)
     
     # Delete entire circular sinlgy linked list
     def deleteEntireCSLL(self):
         self.head = None
         self.tail.next = None
         self.tail = None
-
+    # TC -O(1) & SC - O(1)
 
 
 circularSLL = CircularSinglyLinkedList()
