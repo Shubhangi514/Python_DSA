@@ -26,7 +26,7 @@ class CircularDoublyLinkedList:
         newNode.prev = newNode
         newNode.next = newNode
         return "The CDLL is created successfully"
-
+    # TC - O(1) AND SC - O(1)
 
     # Insertion Method in Circular Doubly Linked List
     def insertCDLL(self, value, location):
@@ -57,7 +57,7 @@ class CircularDoublyLinkedList:
                 newNode.next.prev = newNode
                 tempNode.next = newNode
             return "The node has been successfully inserted"
-
+    # TC - O(n) AND SC - O(1)
     # Traversal of Circular Doubly Linked List
     def traversalCDLL(self):
         if self.head is None:
@@ -69,7 +69,7 @@ class CircularDoublyLinkedList:
                 if tempNode == self.tail:
                     break
                 tempNode = tempNode.next
-
+    # TC - O(n) AND SC - O(1)
     # Reverse traversal of Circular Doubly Linked List
     def reverseTraversalCDLL(self):
         if self.head is None:
@@ -81,7 +81,7 @@ class CircularDoublyLinkedList:
                 if tempNode == self.head:
                     break
                 tempNode = tempNode.prev
-    
+    # TC - O(n) AND SC - O(1)
     # Search Circular Doubly Linked List
     def searchCDLL(self, nodeValue):
         if self.head is None:
@@ -94,7 +94,7 @@ class CircularDoublyLinkedList:
                 if tempNode == self.tail:
                     return "The value does not exist in CDLL"
                 tempNode = tempNode.next
-    
+    # TC - O(n) AND SC - O(1)
     # Delete a node from Circular Doubly Linked List
     def deleteNode(self, location):
         if self.head is None:
@@ -129,7 +129,7 @@ class CircularDoublyLinkedList:
                 curNode.next = curNode.next.next
                 curNode.next.prev = curNode
             print("The node has been successfully deleted")
-    
+    # TC - O(n) AND SC - O(1)
     # Delete entire Circular Doubly Linked List
     def deleteCDLL(self):
         if self.head is None:
@@ -143,7 +143,7 @@ class CircularDoublyLinkedList:
             self.head = None
             self.tail = None
             print("The CDLL has been successfully deleted")
-    
+    # TC - O(1) AND SC - O(1)
 
 
 circularDLL = CircularDoublyLinkedList()
