@@ -25,7 +25,7 @@ class DoublyLinkedList:
         self.head = node
         self.tail = node
         return "The DLL is created Successfully"
-
+    # TC - O(1) AND SC - O(1)
 
 
     #  Insertion Method in Doubly Linked List
@@ -54,6 +54,8 @@ class DoublyLinkedList:
                 newNode.prev = tempNode
                 newNode.next.prev = newNode
                 tempNode.next = newNode
+    
+    # TC - O(n) and SC -O(1)
 
     #  Traversal Method in Doubly Linked List
     def traverseDLL(self):
@@ -64,6 +66,7 @@ class DoublyLinkedList:
             while tempNode:
                 print(tempNode.value)
                 tempNode = tempNode.next
+    # TC - O(n) and SC -O(1)
 
     #  Reverse Traversal Method in Doubly Linked List
     def reverseTraversalDLL(self):
@@ -86,6 +89,7 @@ class DoublyLinkedList:
                     return tempNode.value
                 tempNode = tempNode.next
             return "The node does not exist in this list"
+    # TC - O(n) and SC -O(1)
 
     # Delete a node from Doubly Linked List
     def deleteNode(self,location):
@@ -115,6 +119,7 @@ class DoublyLinkedList:
                 curNode.next = curNode.next.next
                 curNode.next.prev = curNode
             print("The node has been successfully deleted")
+    # TC - O(n) and SC -O(1)
 
     # Delete entire Doubly Linked List
     def deleteDLL(self):
@@ -128,7 +133,7 @@ class DoublyLinkedList:
             self.head = None
             self.tail = None
             print("The DLL has been successfully deleted")
-
+    # TC - O(1) and SC -O(1)
 
 doubyLL = DoublyLinkedList() 
 doubyLL.createDLL(5)
