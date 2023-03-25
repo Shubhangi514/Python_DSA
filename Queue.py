@@ -28,7 +28,10 @@ class Queue:
         else:
             return self.item[0]
 
-	
+
+    def delete(self):
+        self.list = None
+
 
 customQueue = Queue()
 print(customQueue.isEmpty())
@@ -38,4 +41,6 @@ customQueue.enqueue(3)
 customQueue.enqueue(4)
 customQueue.enqueue(5)
 print(customQueue.dequeue())
+print(customQueue)
+customQueue.delete()
 print(customQueue)
