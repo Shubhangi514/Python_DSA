@@ -122,7 +122,6 @@ def searchBT(rootNode,nodeValue):
         return "NOT FOUND !!"
 
 print(searchBT(newBT, "coffee"))
-# TC & SC - O(n)
 print("--------------------")
 def insertNodeBT(rootNode,newNode):
     if not rootNode:
@@ -130,7 +129,7 @@ def insertNodeBT(rootNode,newNode):
     else:
         customQueue = queue.Queue()
         customQueue.enqueue(rootNode)
-        while not(customQueue.isEmpty()):
+        while not (customQueue.isEmpty()):
             root = customQueue.dequeue()
             if root.value.leftChild is not None:
                 customQueue.enqueue(root.value.leftChild)
@@ -143,17 +142,9 @@ def insertNodeBT(rootNode,newNode):
                 root.value.rightChild = newNode
                 return "Successfully Inserted"
 
-root = TreeNode("Tea")
-print(insertNodeBT(root, TreeNode("Lemon Tea")))
-print(insertNodeBT(root, TreeNode("Masala White Tea")))
-root = TreeNode("Coffee")
-print(insertNodeBT(root, TreeNode("Espresso")))
-print(insertNodeBT(root, TreeNode("Latte")))
-# newNode = TreeNode("Coca Cola")
-# newNode = TreeNode("Thumsup")
-# newNode = TreeNode("Orange")
-# newNode = TreeNode("Berry")
-print(insertNodeBT(newBT, root))
+newNode = TreeNode("Lemon Tea")
+print(insertNodeBT(newBT, newNode))
 levelOrderTraversal(newBT)
 # TC & SC - O(n)
-print("--------------------")
+print("---------------")
+# deletion of a node in Binary Tree
