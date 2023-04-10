@@ -65,7 +65,7 @@ class Queue:
         self.LinkedList.head = None
         self.LinkedList.tail = None
 
-customQueue = Queue()
+# customQueue = Queue()
 # print(customQueue.isEmpty())
 # customQueue.enqueue(1)
 # customQueue.enqueue(2)
@@ -76,4 +76,4 @@ customQueue = Queue()
 # print(customQueue.peek())
 # print(customQueue.delete())
 
-print(customQueue)
+# print(customQueue)
