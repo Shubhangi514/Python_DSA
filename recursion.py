@@ -6,19 +6,20 @@ def openRussianDoll(doll):
         openRussianDoll(doll-1)
 
 openRussianDoll(6) 
-
+print('--------------')
 def recursiveMethod(n):
     # for n in recursiveMethod:
     #  n==6
     if n<1:
         print("n is less than 1")
     else:
-        n = 6
+        # n = 6
         recursiveMethod(n-1)
         print(n)
 
 recursiveMethod(3)
- 
+print('--------------')
+
 ###-Recursion Methhod-###
 def recursiveMethod(n):  
     if n < 1:            
@@ -27,6 +28,8 @@ def recursiveMethod(n):
         print(n)      
         recursiveMethod(n-1)   
 recursiveMethod(6)         
+print('--------------')
+
 def factorial(n):
     if n == 0:
         # print("Factorial of 0 is 1")
@@ -34,6 +37,7 @@ def factorial(n):
     else:
         return n * factorial(n-1)
 print(factorial(0))
+print('--------------')
 
 
 
@@ -46,6 +50,7 @@ def powerOfTwo(n):
         return power * 2
 print(powerOfTwo(3))
 
+print('--------------')
 
 ####-Iterative Method-####
 def powerOfTwo(n):
@@ -56,6 +61,7 @@ def powerOfTwo(n):
      i = i + 1  
  return power
 print(powerOfTwo(6)) 
+print('--------------')
 
 ###-Fibonacci-###
 def fibonacci(n):
@@ -65,3 +71,4 @@ def fibonacci(n):
     else:
         return fibonacci(n-1) + fibonacci(n-2)
 print(fibonacci(16))
+print('--------------')
