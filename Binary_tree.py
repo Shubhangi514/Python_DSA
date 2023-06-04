@@ -118,7 +118,7 @@ def searchBT(rootNode,nodeValue):
             if (root.value.leftChild is not None):
                 customQueue.enqueue(root.value.leftChild)
 
-            if (root.value.leftChild is not None):
+            if (root.value.rightChild is not None):
                 customQueue.enqueue(root.value.rightChild)
         return "NOT FOUND !!"
 

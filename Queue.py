@@ -20,7 +20,7 @@ class Queue:
         if self.isEmpty():
             return "There is not any element in the Queue"
         else:
-            return self.item.pop(0)
+            return self.item.pop(3)
 
     def peek(self):
         if self.isEmpty():
@@ -40,10 +40,14 @@ customQueue.enqueue(2)
 customQueue.enqueue(3)
 customQueue.enqueue(4)
 customQueue.enqueue(5)
+print("--------------------------")
+# customQueue.peek()
 print(customQueue.dequeue())
 print(customQueue)
+print("--------------------------")
 customQueue.delete()
 print(customQueue)
+print("--------------------------")
 
 # Circular Queue
 
