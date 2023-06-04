@@ -157,7 +157,7 @@ def getDeepestNode(rootNode):
         customQueue.enqueue(rootNode)
         # enqueue means put() and dequeue means get()
         while not (customQueue.isEmpty()):
-            root = customQueue.dequeue()
+            root = customQueue.dequeue() #if we use the dequeue method it brings the value to the queue and as we know that queue uses FIFO this statement enables us to do so :) 
             if root.value.leftChild is not None:
                 customQueue.enqueue(root.value.leftChild)
             
